@@ -1,13 +1,16 @@
 $(document).ready(function(){
   $('#slide-toogle').click(function(){
     $('body').toggleClass('toggled');
+    $('#body').toggleClass('toggled');
     $('header').toggleClass('toggled');
   });
   $('#slide-close').click(function(){
+    $('#body').toggleClass('toggled');
     $('body').toggleClass('toggled');
     $('header').toggleClass('toggled');
   });
   $('#slide-toogle,#sidenav').clickoutside(function(){
+    $('#body').removeClass('toggled');
     $('body').removeClass('toggled');
     $('header').removeClass('toggled');
   });

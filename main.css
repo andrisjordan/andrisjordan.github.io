@@ -4,6 +4,9 @@
 body.toggled{
   overflow: hidden;
 }
+#body.toggled{
+  overflow: hidden;
+}
 #sidenav{
   position: absolute;
   width: 50vh;
